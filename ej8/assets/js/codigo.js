@@ -12,11 +12,7 @@ function isPalindrome(cadena) {
   let palabra2 = ''
   for (let i = palabra.length; i >= 0; i--) {
     palabra2 = palabra2 + palabra.charAt(i);
-  }
-
-  console.log(palabra)
-  console.log(palabra2)
-  
+  }  
 
   if (palabra==palabra2){
     return true;
