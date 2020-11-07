@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+        <title>Ejercicio 15 - Informaci�n sobre eventos</title>
+        <style type="text/css">
+            body {
+                font-family: arial, helvetica;
+            }
+            .info {
+                width: 160px;
+                border: thin solid silver;
+                padding: 0.5em;
+                margin-top: 20px;
+                /*position: fixed;*/
+            }
+            .info h1 {
+                margin: 0;
+            }
+        </style>
+        <script type="text/javascript">
+
+            function muestraInformacion(e, id, type) {
+                document.getElementById('info1').style.backgroundColor = '#FFFFFF';
+                document.getElementById('info2').style.backgroundColor = '#FFFFFF';
+
+                switch(type) {
+                case 1:
+                    document.getElementById(id).style.backgroundColor = '#FFFFCC';
+                    document.getElementById(id).getElementsByTagName('p')[0].innerHTML = 'Navegador ['+e.screenX+','+e.screenY+']';
+                    document.getElementById(id).getElementsByTagName('p')[1].innerHTML = 'Pagina ['+e.clientX+','+e.clientY+']';
+                    break;
+                case 2:
+                    document.getElementById(id).style.backgroundColor = '#CCE6FF';
+                    document.getElementById(id).getElementsByTagName('p')[0].innerHTML = 'Caracter ['+e.key+']';
+                    document.getElementById(id).getElementsByTagName('p')[1].innerHTML = 'Codigo ['+e.keyCode+']';
+                    break;  
+                }
+
+
+            }
+
+        </script>
+    </head>
+    <body onmousemove="muestraInformacion(event, 'info1', 1)" onkeydown="muestraInformacion(event, 'info2', 2)">
+        <div id="info1" class="info" >
+            <h1>Raton</h1>
+            <p>Navegador []</p>
+            <p>Pagina []</p>
+        </div>
+
+        <div id="info2" class="info" >
+            <h1>Teclado</h1>
+            <p>Caracter []</p>
+            <p>Codigo []</p>
+        </div>
+
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+    </body>
+</html>
