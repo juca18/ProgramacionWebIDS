@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+        <meta http-equiv="X-Frame-Options" content="deny">
+        <title>Ejercicio 15 - Informaci�n sobre eventos</title>
+        <style type="text/css">
+
+        </style>
+        <script type="text/javascript">
+
+            function OnlyLetras(e, target)
+            {
+                if (e.keyCode >=97 && e.keyCode <=122){
+                    return true;
+                }else{
+                    return false;
+                }
+            }
+
+        </script>
+    </head>
+    <body >
+        
+        <form>
+            <input type="text" name="Texto", placeholder="Ingresa" onkeypress="return OnlyLetras(event, this)">
+        </form>
+			
+    </body>
+</html>
